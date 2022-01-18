@@ -1,0 +1,547 @@
+body {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* bilder mit CSS einfügen
+background: url('./img/bildname.jpg');
+background-repeat: no-repeat;
+*/
+
+
+@font-face {
+    font-family:'NewFont' ;
+    src: url(./fonts/Starjout.ttf);
+}
+
+content {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+    /* Header Bereich */
+
+
+    h1 {
+        font-family: 'NewFont';
+        color: white;
+        text-align: center;
+        font-size: 2 vw;
+        align-self: center;
+       padding-top: 18vw;
+    }
+
+    h2 {
+        font-size: 1 vw;
+        text-align: center;
+        color: white;
+        padding-top: 0px;
+    }
+
+    h3 {
+        font-family: 'NewFont';
+        font-size: 1 vw;
+        text-align: center;
+        color: white;
+        padding-top: 0px;
+    }
+
+    button {
+        border: black solid 2px;
+        align-self: center;
+        padding: 1vw;
+        border-radius: 8px;   
+        font-family: 'NewFont';
+    }
+
+    button:hover {
+        background-color: #FED053;
+    }
+
+    .headerContact {
+        background: url("/dist/img/tommy-van-kessel-_sDlQf6f7gc-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+        background-position: 50% 60%;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 3vw;
+    }
+
+    header {
+        background: url('./img/agnieszka-kowalczyk-c0VRNWVEjOA-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+        background-position: 50% 60%;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 3vw;
+    
+    }
+    /* Nav Bereich */
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+        background-color: rgba(0,0,0, 0.50);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 60px;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 2vw;
+        align-self: left;
+        padding: 16px;
+        font-family: 'NewFont';
+    }
+    .menulist {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .menulist ul {
+        display: flex;
+       padding-left: 0px;
+       flex-direction: row; 
+    }
+    .menulist li {
+        display: flex;
+        align-self: left;
+        list-style-type: none;
+        font-size: 2vw;
+      
+    }
+    .menulist li a {
+        /*display: block;*/
+        padding: 16px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menulist li a:hover {
+        color: #FED053;
+    }
+
+    @media only screen and (max-width: 960px) {
+        .logo {
+            font-size: 3vw;
+            padding: 8px;
+            padding-left: 20px;
+        }
+        .menulist li {
+            font-size: 3vw;
+          
+        }
+        .menulist li a {
+            padding: 10px;
+        }
+        .menulist {
+            margin-right: 50px;
+        }
+    }
+
+    /* Ende Nav-Bereich */
+    /* Beginn Place Segment */
+    .place {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    /* Media Query: flex-wrap: no-wrap; */
+
+    .placeCircles {
+        height: 600px;
+        position: relative;
+        background-color: #3B3F46;
+        width: 60%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: -10%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        height: 110%;
+        width: 110%;
+        background-color: rgba(255,191,0,0.5);
+        color: white;
+        border-radius: 10000px;
+        opacity: 0;
+    }
+    .placeCircles:hover .overlay {
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+    .circle1 {
+        margin: 10px;
+        top: 50px;
+        left: 50px;
+        position: absolute;
+        background-image: url('./img/carol-kennedy-X5WdN60n6yk-unsplash.jpg');
+        width: 300px;
+        border-radius: 10000px;
+        border: 2px solid #FED053;
+        display: block;
+        height: 300px;
+        background-size: cover;
+    
+    }
+    
+    .circle1Contact {
+        margin: 10px;
+        top: 80px;
+        left: 80px;
+        position: absolute;
+        background-image: url('./img/isaac-martin-iw6vapb2Ea0-unsplash.jpg');
+        width: 400px;
+        border-radius: 10000px;
+        border: 2px solid #FED053;
+        display: block;
+        height: 400px;
+        background-size: cover;
+    
+    } 
+   
+    .circle2 {
+        margin: 10px;
+        position: absolute;
+        top: 200px;
+        left: 280px;
+        background-image: url('./img/casey-horner-RmoWqDCqN2E-unsplash\ \(1\).jpg');
+        width: 230px;
+        border-radius: 10000px;
+        border: 2px solid #FED053;
+        display: block;
+        height: 230px;
+        background-size: cover;
+    }
+
+    .circle3 {
+        margin: 10px;
+        position: absolute;
+        top: 300px;
+        left: 120px;
+        background-image: url('./img/kadyn-pierce-iOsq9Y5wA2I-unsplash.jpg');
+        width: 180px;
+        border-radius: 10000px;
+        border: 3px solid #FED053;
+        display: block;
+        height: 180px;
+        background-size: cover;
+    }
+
+  
+/*Text Section about Places */
+    .placeDescription {
+        flex-wrap: wrap;
+        color: white;
+        background-color: #3B3F46;
+        width: 30%;
+        padding-right: 10%;
+        padding-top: 100px;
+    }
+
+    .placePoint {
+        text-align: center;
+    }
+
+    .listPlaces {
+        display: flex;
+        flex-direction: column; 
+        align-content: center;
+    }
+    .listPlaces ul {
+        display: flex;
+       padding-left: 0px;
+    }
+    .listPlaces li {
+        list-style-type: none;
+        font-size: 2vw;
+        color: #FED053;
+    }
+
+    @media only screen and (max-width: 960px) {
+
+        body {
+            background-color: #3B3F46;
+        }
+
+        h3 {
+            font-size: 3vw;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+           padding-top: 100px;
+        }
+        .listPlaces li {
+            list-style-type: none;
+            font-size: 2vw;
+            text-align: center;
+        }
+        .placeCircles {
+            height: 350px;
+        }
+        .placeDescription {
+            width: 30%;
+            padding-right: 10%;
+            height: 350px;
+            align-items: center;
+            padding-top: 0px;
+        }
+       
+        .circle1 {
+            margin: 10px;
+            top: 80px;
+            left: 60px;
+            width: 150px;
+            border-radius: 10000px;
+            border: 2px solid #FED053;
+            height: 150px;
+        }
+        .circle2 {
+            margin: 10px;
+            top: 160px;
+            left: 160px;
+            width: 110px;
+            border-radius: 10000px;
+            border: 2px solid #FED053;
+            height: 110px;
+        }
+    
+        .circle3 {
+            margin: 6px;
+            top: 200px;
+            left: 80px;
+            width: 80px;
+            border: 2px solid #FED053;
+            height: 80px;
+        }
+    }
+
+    /* Menu Beginn */
+
+    .h2 {
+        font-family: 'NewFont';
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        align-self: center;
+        margin-top: 0;
+    }
+    .menu {
+        padding: 0px 5%;
+        background-color: #3B3F46;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .menu::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    .spalte1 {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 100px;
+        padding-right: 20px;
+    }
+    .spalte2 {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 100px;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        float: left;
+        border-radius: 100%;
+        border: 3px solid #FED053; 
+        margin: 20px;
+    }
+
+    @media only screen and (max-width: 960px) {
+        .h2 {
+            font-family: 'NewFont';
+            color: white;
+            text-align: center;
+            font-size: 4vw;
+            align-self: center;
+            padding: 4px;
+        }
+        .menu {
+            padding: 0px 5%;
+            background-color: #3B3F46;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+    
+        .spalte1 {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding-left: 14px;
+            padding-right: 7px;
+        }
+        .spalte2 {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding-left: 7px;
+            padding-right: 14px;
+        }
+        img {
+            width: 100%;
+            display: block;
+            float: left;
+            border-radius: 100%;
+            border: 3px solid #FED053; 
+            margin: 2px;
+        }
+    }
+   
+    /* Footer */
+    footer {
+        background-color: white;
+    }
+
+    footer::after {
+        
+            display: block;
+            clear: both;
+            content: "";
+        }
+    
+    .icons {
+        padding: 1vw;
+        font-size: 3vw;
+        color: #FED053; 
+        float: left;
+    }
+
+    .icons:hover {
+        color: #3B3F46;
+    }
+
+    .smText {
+        float: left;
+    }
+
+    .hide {
+        display: none;
+    }
+
+   
+
+    /* Media Query */
+    @media only screen and (min-width: 960px) {
+
+        
+
+        h3 {
+            font-family: 'NewFont';
+            font-size: 2vw;
+            text-align: center;
+            color: white;
+            padding-top: 0px;
+        }
+
+    .place {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 0px;
+            width: 100%;
+            padding: 0px;
+        }
+    
+        .placeCircles {
+            height: 600px;
+            position: relative;
+            background-color: #3B3F46;
+            width: 50%;
+        }
+    
+        .circle1 {
+            margin: 10px;
+            top: 80px;
+            left: 60px;
+            position: absolute;
+            background-image: url('./img/carol-kennedy-X5WdN60n6yk-unsplash.jpg');
+            width: 400px;
+            border-radius: 10000px;
+            border: 2px solid #FED053;
+            display: block;
+            height: 400px;
+            background-size: cover;
+        
+        } 
+       
+        .circle2 {
+            margin: 10px;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            background-image: url('./img/casey-horner-RmoWqDCqN2E-unsplash\ \(1\).jpg');
+            width: 300px;
+            border-radius: 10000px;
+            border: 2px solid #FED053;
+            display: block;
+            height: 300px;
+            background-size: cover;
+        }
+    
+        .circle3 {
+            margin: 10px;
+            position: absolute;
+            top: 350px;
+            left: 120px;
+            background-image: url('./img/kadyn-pierce-iOsq9Y5wA2I-unsplash.jpg');
+            width: 200px;
+            border-radius: 10000px;
+            border: 3px solid #FED053;
+            display: block;
+            height: 200px;
+            background-size: cover;
+        
+        }
+    
+        .placeDescription {
+            flex-wrap: wrap;
+            color: white;
+            background-color: #3B3F46;
+            width: 40%;
+            padding-right: 10%;
+            padding-top: 80px;
+        }
+    }
+
